@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628479032308",
+    "project_id": "brotherhoodfiles-e1831",
+    "storage_bucket": "brotherhoodfiles-e1831.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628479032308:android:4a640f214087ba34f617a1",
+        "android_client_info": {
+          "package_name": "com.example.brotherhood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYzpM4lVCnVSEmV6iV6h7KlOhMvx4JvLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
