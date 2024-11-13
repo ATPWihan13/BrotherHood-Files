@@ -113,7 +113,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   suffixIcon: _phoneNumberController.text.length > 9
                       ? authProvider.isLoading
-                        ? const CircularProgressIndicator()
+                        ? const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: CircularProgressIndicator(),
+                  )
                   : InkWell(
                     onTap: (){
                       // Sign In with phone number
