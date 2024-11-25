@@ -1,6 +1,10 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:brotherhood/authentication/login_screen.dart';
+import 'package:brotherhood/authentication/otp_screen.dart';
+import 'package:brotherhood/authentication/user_information_screen.dart';
 import 'package:brotherhood/providers/authentication_provider.dart';
+import 'package:brotherhood/screens/home_screen.dart';
+import 'package:brotherhood/utilities/constants.dart';
 // import 'package:brotherhood/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +49,13 @@ class MyApp extends StatelessWidget {
         title: 'Brotherhood Files',
         theme: theme,
         darkTheme: darkTheme,
-        home: const LoginScreen(),
+        initialRoute: Constants.loginScreen,
+        routes: {
+          Constants.loginScreen: (context) => const LoginScreen(),
+          Constants.optScreen: (context) => const OTPScreen(),
+          Constants.userInformationScreen: (context) => const UserInformationScreen(),
+          Constants.homeScreen: (context) => const HomeScreen(),
+        },
       ),
     );
   }
