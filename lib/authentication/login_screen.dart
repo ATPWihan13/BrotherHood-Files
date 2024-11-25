@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:brotherhood/providers/authentication_provider.dart';
-// import 'package:rounded_loading_button/rounded_loading_button.dart';
 import '../utilities/assets_manager.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -17,7 +16,6 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
 
   final TextEditingController _phoneNumberController = TextEditingController();
-  // final RoundedLoadingButtonController _buttonController = RoundedLoadingButtonController();
 
 
   Country selectedCountry = Country(
@@ -36,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void dispose(){
     _phoneNumberController.dispose();
-    // _buttonController.stop();
     super.dispose();
   }
 
